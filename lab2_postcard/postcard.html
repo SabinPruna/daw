@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <title>Postcard</title>
+    <link rel="stylesheet" href="./postcard.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <i class="glyphicon glyphicon-envelope big"></i>
+    <h2>Side 1:</h2>
+    <table>
+        <tr>
+            <!-- First 2 images in a row-->
+            <div class="row">
+                <div class="col-xs-8">
+                    <img id="image1" src="./images/1.jpg" alt="1">
+                </div>
+                <div class="col-xs-4">
+                    <img id="image2" src="./images/2.jpg" alt="2">
+                </div>
+            </div>
+
+            <!-- Last 3 images , waterfall-->
+            <div class="row">
+                <div class="col-xs-4">
+                    <img id="image3" src="./images/3.jpg" alt="3">
+                </div>
+                <div class="col-xs-4 pull-right">
+                    <img id="image4" src="./images/4.png" alt="4">
+                </div>
+                <div class="col-xs-4">
+                    <img id="image5" src="./images/5.jpg" alt="5">
+                </div>
+            </div>
+        </tr>
+    </table>
+
+
+    <!--Back of card-->
+    <i class="glyphicon glyphicon-envelope big"></i>
+    <h2>Side 2:</h2>
+
+    <div class="row">
+        <!-- with separator-->
+        <div class="col-xs-6 devider">
+
+            <h3>Absender</h3>
+            <!--making spaces for sender to write on-->
+            <ul>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>(Street and whatever)</li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>(Whatever is left)</li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="stamp pull-right">
+                <img src="./images/stamp.jpg" alt="stamp">
+            </div>
+            <h2 class="middle">PostKarte</h2>
+            <ul>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>(Street and whatever)</li>
+                <li>
+                    <hr class="hr_class" />
+                </li>
+                <li>(Whatever is right)</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
