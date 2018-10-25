@@ -1,4 +1,4 @@
-var N_SIZE = 3,
+var WIN_SIZE = 3,
     EMPTY = '&nbsp;',
     boxes = [],
     turn = 'X',
@@ -11,10 +11,10 @@ function init() {
     board.setAttribute('cellspacing', 0);
 
     var identifier = 1;
-    for (var i = 0; i < N_SIZE; i++) {
+    for (var i = 0; i < WIN_SIZE; i++) {
         var row = document.createElement('tr');
         board.appendChild(row);
-        for (var j = 0; j < N_SIZE; j++) {
+        for (var j = 0; j < WIN_SIZE; j++) {
             var cell = document.createElement('td');
             cell.setAttribute('height', 120);
             cell.setAttribute('width', 120);
@@ -24,7 +24,7 @@ function init() {
             if (i == j) {
                 cell.classList.add('diagonal0');
             }
-            if (j == N_SIZE - i - 1) {
+            if (j == WIN_SIZE - i - 1) {
                 cell.classList.add('diagonal1');
             }
             cell.identifier = identifier;
@@ -56,8 +56,8 @@ function win(clicked) {
     for (var i = 0; i < memberOf.length; i++) {
         var testClass = '.' + memberOf[i];
         var items = contains('#tictactoe' + testClass, turn);
-        
-        if (items.length == N_SIZE) {
+
+        if (items.length == WIN_SIZE) {
             return true;
         }
     }
@@ -82,7 +82,7 @@ function set() {
     if (win(this)) {
         alert('Winner: Player ' + turn);
         startNewGame();
-    } else if (moves === N_SIZE * N_SIZE) {
+    } else if (moves === WIN_SIZE * WIN_SIZE) {
         alert('Draw');
         startNewGame();
     } else {
