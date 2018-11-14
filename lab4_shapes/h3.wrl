@@ -1,0 +1,73 @@
+#VRML V2.0 utf8
+
+#Deseneaza formele geometrice si le pozitioneaza la o anumita dinstanta una de alta pe o linie dreapta
+Transform {
+	translation -4.5 0 0 
+	children 
+		Shape{  appearance Appearance {
+				material Material { diffuseColor 1.0 0.0 1.0}}
+			geometry Box{}
+		}
+}
+		
+Transform {
+	translation -1.5 0 0 
+	children Shape{  appearance Appearance {
+				material Material { diffuseColor 1.0 0.0 1.0}}
+			geometry Cone{}
+		}
+}
+
+Transform {
+	translation 1.5 0 0 
+	children Shape{  appearance Appearance {
+				material Material { diffuseColor 1.0 0.0 1.0}}
+			geometry Cylinder{}
+		}
+}
+
+Transform {
+	translation 4.5 0 0 
+	children Shape{  appearance Appearance {
+				material Material { diffuseColor 1.0 0.0 1.0}}
+			geometry Sphere{}
+		}
+}
+
+#creaza o mini tabla de sah, trebuie schimbat viewpoint-ul pentru a vodea, initial este pusa orizontal langa restul formelor, cu un pov pozitionat deasupra formelor se poate vedea in intregime
+Transform {
+	translation 6.5 0 -3.0 
+	children Shape{  appearance Appearance {
+				material Material { diffuseColor 1.0 0.0 1.0}}
+			geometry ElevationGrid {
+		xDimension 9
+		zDimension 9
+		xSpacing 1
+		zSpacing 1
+		height [ 
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+			0 0 0 0 0 0 0 0 0
+		]
+		colorPerVertex FALSE
+		color Color { 
+			color [
+				0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 
+				1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 
+				0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 
+				1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 
+				0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 
+				1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 
+				0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 
+				1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 1 0 1, 0 0 0, 
+			]
+		}
+	}
+}
+}

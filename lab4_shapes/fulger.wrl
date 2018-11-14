@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+
+Viewpoint {
+	position 3.5 4.5 15.0
+	description "Entry view"
+}
+
+#gasit un exemplu pentru create unui fulger folosind IndexedFaceSet de unde am luat coordonatele.
+Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 1.0 0.0 1.0
+		}
+	}
+	geometry IndexedFaceSet {
+		coord Coordinate {
+			point [
+			# varf fulger
+				0.0  0.0  0.0,
+			# partea frontala
+				5.5  5.0  0.88,
+				4.0  5.5  0.968,
+				7.0  8.0  1.408,
+				4.0  9.0  1.584,
+				1.0  5.0  0.88,
+				2.5  4.5  0.792,
+			# partea din spate
+				5.5  5.0 -0.88,
+				4.0  5.5 -0.968,
+				7.0  8.0 -1.408,
+				4.0  9.0 -1.584,
+				1.0  5.0 -0.88,
+				2.5  4.5 -0.792,
+			]
+		}
+		coordIndex [
+		# fata
+			0,  1,  2,  3,  4,  5,  6, -1,
+		# spate
+			0, 12, 11, 10,  9,  8,  7, -1,
+		# laterale
+			0,  7,  1, -1,
+			1,  7,  8,  2, -1,
+			2,  8,  9,  3, -1,
+			3,  9, 10,  4, -1,
+			4, 10, 11,  5, -1,
+			5, 11, 12,  6, -1,
+			6, 12,  0, -1,
+		]
+		creaseAngle 0.0
+		convex FALSE
+		solid TRUE
+		colorPerVertex TRUE
+		ccw TRUE
+	}
+}

@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+#PointSet example
+
+Shape {
+	geometry PointSet {
+		coord Coordinate {
+                    point [
+					#3 puncte pozitionate pe diagonala, centrul ei fiind in mijlocul display-ului.
+						-1.0 -1.0 0.0,
+						 1.0 1.0 0.0,
+						 0.0 0.0 0.0,
+                    ]
+                }
+                color Color {
+                    color [
+					#roz, cam greu de vazut indiferent de culoare
+                        1.0 0.0 1.0,
+						1.0 0.0 1.0,
+                        1.0 0.0 1.0,
+                    ]
+                }
+            }
+        }
