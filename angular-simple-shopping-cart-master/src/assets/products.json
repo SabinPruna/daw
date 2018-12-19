@@ -1,0 +1,98 @@
+[
+  {
+    "id": "pasta",
+    "price": 3.50,
+    "name": "Pasta",
+    "description": "Looking for simple, clean and italian? This healthy dose of pasta is all you could ever want.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "percentage": 50
+      },
+      {
+        "name": "tomato sauce",
+        "percentage": 20
+      },
+      {
+        "name": "beef",
+        "percentage": 20
+      },
+      {
+        "name": "tomato",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "goulash",
+    "price": 10.66,
+    "name": "Goulash",
+    "description": "This enzyme rich meal is filled with phytonutrients and bromelin which helps to reduce inflammation. Best in town.",
+    "ingredients": [
+      {
+        "name": "beef",
+        "percentage": 50
+      },
+      {
+        "name": "sauce",
+        "percentage": 20
+      },
+      {
+        "name": "vegetables",
+        "percentage": 20
+      },
+      {
+        "name": "spices",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "breakfast",
+    "price": 3,
+    "name": "Breakfast",
+    "description": "Beets help your body to release stomach acid which aids digestion! Start your day right",
+    "ingredients": [
+      {
+        "name": "muesli",
+        "percentage": 50
+      },
+      {
+        "name": "milk",
+        "percentage": 30
+      },
+      {
+        "name": "strawberry",
+        "percentage": 10
+      },
+      {
+        "name": "blueberyy",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "SteamedFish",
+    "price": 19.20,
+    "name": "Steamed Fish",
+    "description": "Fresh and lively, leaves a watery taste down down your mouth!",
+    "ingredients": [
+      {
+        "name": "bass",
+        "percentage": 50
+      },
+      {
+        "name": "lemon",
+        "percentage": 20
+      },
+      {
+        "name": "parsley",
+        "percentage": 20
+      },
+      {
+        "name": "tumeric",
+        "percentage": 10
+      }
+    ]
+  }
+]

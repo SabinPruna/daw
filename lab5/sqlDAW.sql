@@ -1,4 +1,3 @@
-
 CREATE TABLE employees (
     emp_no      INT             NOT NULL,  -
     birth_date  DATE            NOT NULL,
